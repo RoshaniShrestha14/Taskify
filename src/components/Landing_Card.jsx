@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckSquare, Calendar, Filter, Search } from "lucide-react";
-import "./landing_card.css";
+import "./landing_Card.css";
 
 const cards = [
   { icon: CheckSquare, title: "Track Tasks", description: "Add, edit, and manage your daily tasks with ease." },
