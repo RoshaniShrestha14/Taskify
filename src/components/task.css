@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background-color: #fefbf8;
+  color: #1f2937;
+}
+
+.task-app {
+  max-width: 920px;
+  margin: 40px auto;
+  padding: 8px;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.header-left {
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #0d9488;
+}
+
+header p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.tagline {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-left: 6px;
+}
+
+header button {
+  background-color: #1fb79c;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 24px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+header button:hover {
+  opacity: 0.92;
+}
+
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 18px;
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 16px;
+  margin-bottom: 22px;
+}
+
+.search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: transparent;
+}
+
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+
+.filter-tabs {
+  display: flex;
+  background: #efefef;
+  padding: 6px;
+  border-radius: 18px;
+}
+
+.filter-tabs button {
+  border: none;
+  background: transparent;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.filter-tabs button span {
+  margin-left: 4px;
+  color: #1fb79c;
+}
+
+.filter-tabs .active {
+  background: #ffffff;
+  box-shadow: 0 0 0 1px #e6e6e6;
+  color: #111827;
+}
+
+
+.sort select {
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  background: #ffffff;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #6b7280;
+}
+
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.task {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 20px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #ececec;
+}
+
+.task input[type="checkbox"] {
+  margin-top: 4px;
+  width: 20px;
+  height: 20px;
+  accent-color: #1fb79c;
+}
+
+
+.task span {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.task small {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.task button {
+  margin-left: auto;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.task button:hover {
+  color: #111827;
+}
+
+.task-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.task-actions button {
+  margin-left: 0;
+}
+
+
+.task.done span {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.task.done small {
+  color: #bdbdbd;
+}
+
+/* Overdue should not change the card border color */
+
+.task .overdue-label {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 28px;
+  width: 360px;
+  border-radius: 18px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.modal h3 {
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+.modal input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.modal button {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.modal button:first-of-type {
+  background: #1fb79c;
+  color: white;
+}
+
+.modal button:last-of-type {
+  background: #f3f4f6;
+}
