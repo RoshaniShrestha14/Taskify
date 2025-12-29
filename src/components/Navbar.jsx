@@ -1,12 +1,14 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="nav">
       <div className="nav-left">
-        <h2 className="logo">Taskify</h2>
+        <Link to="/" className="logo-link">
+          <h2 className="logo">Taskify</h2>
+        </Link>
       </div>
       <ul className="nav-right">
         <li>
@@ -19,16 +21,7 @@ const Navbar = () => {
             Task Tracker
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/login" className="nav-link">
-            Login
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/signup" className="nav-link signup">
-            Signup
-          </NavLink>
-        </li>
+    
       </ul>
     </nav>
   );

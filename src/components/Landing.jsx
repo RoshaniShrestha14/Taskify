@@ -13,7 +13,9 @@ function Landing() {
         <p className='description'>
           A minimal, beautiful task management app to help you stay organized and productive. No clutter, just focus.
         </p>
-        <button className='get-started-button'>Get Started</button>
+        <Link to='/tasks'>
+          <button className='get-started-button'>Get Started</button>
+        </Link>
       </div>
     </div>
   );

@@ -76,8 +76,10 @@ const TaskTracker = () => {
   return (
     <div className="task-app">
       <header>
-        <h1>Task Tracker</h1>
-        <p className="tagline">Stay organized, get things done</p>
+        <div className="header-left">
+          <h1>Task Tracker</h1>
+          <p className="tagline">Stay organized, get things done</p>
+        </div>
         <button onClick={() => setModalOpen(true)}>+ Add Task</button>
       </header>
 
